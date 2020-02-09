@@ -1,0 +1,105 @@
+body{margin:0;padding:0;overflow:hidden}
+#map-cementerio{height:100%;width:100%;}
+.titulo{
+    position: absolute;
+    top: 5px;
+    left: 5%;
+    width: auto;
+    height: 50px;
+    z-index: 1000;
+    background-color: rgba(255,255,255,1);
+    padding: 5px;
+    font-size: 10px;
+    color: #000000;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.leyenda{
+    position: absolute;
+    bottom:20px;
+    right:1%;
+    width:auto;
+    height:300px;
+    z-index: 1000;
+    background-color: rgba(255,255,255,1);
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 5px;
+    /*opacity: 0.7;*/
+}
+
+
+span.A {
+    background: #ff9922;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ff9922;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+  span.C {
+    background: #13cd00;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #13cd00;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+  span.H {
+    background: #d300ff;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #d300ff;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+  span.N {
+    background: #0007d4;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #0007d4;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+  span.P {
+    background: #38f7ff;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #38f7ff;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+  span.T {
+    background: #ffff12;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffff12;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+

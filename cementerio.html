@@ -1,8 +1,47 @@
 <html>
     <head>
         <title>"Practica final: Cementerio Girona"</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jair Barco - azubarco"/>
+        <meta name="description" content="Practica Leaflet con Cementerio Girona">
+        <meta name="robots" content="leaflet,Girona">
+
+        <!--Librería leaflet.js y hoja de estilo leaflet.css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+        <!--Plugin para agregar datos de capas en GeoJson-->
+        <script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
+
+        <!--Estilos-->
+        <link rel="stylesheet" href="css/cementerio.css"/>
+
+        <!--Javascript para crear las funcionalidades del mapa-->
+        <script src="js/mapa.js"></script>
+        <!--Javascript para agregar los datos del cementerio-->
+        <script src="js/cementerio.js"></script>
+       
+        <script>
+            function init_Cementerio(){
+                init();
+                addDatosCementerio();
+            }
+        </script>
     </head>
-    <body>
-        <h1>"Cementerio Girona"</h1>
+    <body onLoad="init_Cementerio()">
+        <div class="titulo"><h1>Cementerio Girona</h1></div>
+        <div class="leyenda">
+            <h2>Leyenda:</h2>
+            <h3><span class="A">A</span>Altar</h3>
+            <h3><span class="C">C</span>Columbario</h3>
+            <h3><span class="H">H</span>Hipógeo</h3>
+            <h3><span class="N">N</span>Nicho</h3>
+            <h3><span class="P">P</span>Panteón</h3>
+            <h3><span class="T">T</span>Tumba</h3>
+        </div>
+        <div id="map-cementerio">
+            
+        </div>
     </body>
 </html>
