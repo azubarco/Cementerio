@@ -3,12 +3,12 @@ var urlSepulturas="datos/Sepulturas.json";
 
 
 function addDatosCementerio(){
-    
+    //Agrego los datos de Json a la variable
     layer_Sepulturas= new L.GeoJSON.AJAX(
         urlSepulturas,
         {
             onEachFeature:function(feature,layer){
-                var tipo;
+                var tipo; //variable para colocar el nombre del tipo de Sepultura
                 switch(feature.properties.TIPUSCONST){
                     case "A": tipo="Altar";break;
                     case "C":tipo="Columbario";break;
@@ -23,11 +23,11 @@ function addDatosCementerio(){
                                "<b>Tipo de Construcción: " + tipo + "</b><br>" + 
                                "<b>Primera fila: " + feature.properties.NUMFILA1 + "</b><br>" +
                                "<b>Año de construcción: " + feature.properties.ANY_CONST + "</b><br>";
-                layer.bindPopup(popupContent);
+                layer.bindPopup(popupContent);//Agrego los datos seleccionados al Popup
                 
             },
             pointToLayer:function(feature,latlng){
-                var fcolor;
+                var fcolor; //variable para asignar el color de acuerdo al tipo de sepultura
                 switch(feature.properties.TIPUSCONST){
                     case "A":fcolor="#ff9922";break;
                     case "C":fcolor="#13cd00";break;

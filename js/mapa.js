@@ -13,13 +13,13 @@ function init(){
 
     Layer_map=L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
         maxZoom:19,
-        //minZoom:1,
+        minZoom:1,
         attribution: "OSM"    
     });//L.tileLayer es un tipo de capa para añadir al objeto L.map
 
     Layer_esri=L.tileLayer("http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{
         maxZoom:19,
-        //minZoom:1,
+        minZoom:1,
         attribution:"Tiles © Esri"
     });
 
