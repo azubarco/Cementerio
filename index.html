@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
-        <!--Plugin para agregar datos de capas en GeoJson-->
+        <!--Plugin Leaflet Ajax para agregar datos de capas GeoJson al mapa-->
         <script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 
         <!--Estilos-->
@@ -24,14 +24,14 @@
        
         <script>
             function init_Cementerio(){
-                init();
-                addDatosCementerio();
+                init(); //La función init se encuentra dentro del script mapa.js
+                addDatosCementerio(); //Función para agregar la capa de sepulturas del cementerio
             }
         </script>
     </head>
     <body onLoad="init_Cementerio()">
-        <div class="titulo"><h1>Cementerio Girona</h1></div>
-        <div class="leyenda">
+        <div class="titulo"><h1>Cementerio Girona</h1></div> <!--Titulo -->
+        <div class="leyenda"> <!--Tabla de Leyenda -->
             <h2>Leyenda:</h2>
             <h3><span class="A">A</span>Altar</h3>
             <h3><span class="C">C</span>Columbario</h3>
@@ -40,7 +40,7 @@
             <h3><span class="P">P</span>Panteón</h3>
             <h3><span class="T">T</span>Tumba</h3>
         </div>
-        <div id="map-cementerio">
+        <div id="map-cementerio"> <!--Mapa -->
             
         </div>
     </body>
