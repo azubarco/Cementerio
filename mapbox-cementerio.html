@@ -1,0 +1,36 @@
+<html>
+    <head>
+        
+        <title>Cementerio Girona en Mapbox</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+        <meta name="author" content="Jair Barco - azubarco"/>
+        <meta name="description" content="Practica Mapbox con Cementerio Girona">
+        <meta name="robots" content="index,follow">
+
+        <!--Librería y hoja de estilo de mapbox -->
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+        <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
+
+        <!--Estilos-->
+        <link rel="stylesheet" href="css/cementerio.css"/>
+        <!--Javascript para crear las funcionalidades del mapa y las funcionalidades del cementerio-->
+        <script src="js/cementerio-mapbox.js"></script>
+
+    </head>
+    <body onLoad="init()">
+        <div class="titulo"><h1>Cementerio Girona</h1></div> <!--Titulo -->
+        <div class="leyenda"> <!--Tabla de Leyenda -->
+            <h2>Leyenda:</h2>
+            <h3><span class="A">A</span>Altar</h3>
+            <h3><span class="C">C</span>Columbario</h3>
+            <h3><span class="H">H</span>Hipógeo</h3>
+            <h3><span class="N">N</span>Nicho</h3>
+            <h3><span class="P">P</span>Panteón</h3>
+            <h3><span class="T">T</span>Tumba</h3>
+        </div>
+        <div id="map-overlay" class="map-overlay"></div> <!--Para colocar la información resumida de la Sepultura-->
+        <div id="map-cementerio"></div> <!--Mapa-->
+        
+    </body>
+</html>

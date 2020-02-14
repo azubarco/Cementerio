@@ -1,18 +1,19 @@
 body{margin:0;padding:0;overflow:hidden}
 #map-cementerio{height:100%;width:100%;}
 .titulo{
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 5px;
-    left: 5%;
-    width: auto;
-    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    position: absolute;
+    width: 18%;
+    top: 15px;
+    left: 40px;
+    padding: 10px;
     z-index: 1000;
-    background-color: rgba(255,255,255,1);
-    padding: 5px;
-    font-size: 10px;
-    color: #000000;
-    border-radius: 5px;
-    opacity: 0.7;
+    line-height: auto;
+    /* opacity: 0.7; */
 }
 .leyenda{
     position: absolute;
@@ -29,8 +30,10 @@ body{margin:0;padding:0;overflow:hidden}
     /*opacity: 0.7;*/
 }
 
+span{font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;}
 
 span.A {
+  
     background: #ff9922;
     border-radius: 0.8em;
     -moz-border-radius: 0.8em;
@@ -103,3 +106,16 @@ span.A {
     width: 1.6em; 
   }
 
+  .map-overlay {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    position: absolute;
+    width: 18%;
+    bottom: 40px;
+    left: 10px;
+    padding: 10px;
+    z-index: 1000;
+    display: none;
+  }
